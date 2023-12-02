@@ -138,6 +138,7 @@ h4 {
 /* title */
 
 .title-container {
+    height: 518.5px;
     background-color: #1F1F1F;
     cursor: pointer;
     transition: opacity 300ms, box-shadow 400ms;
