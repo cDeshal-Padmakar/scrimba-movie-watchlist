@@ -114,7 +114,7 @@ function handleTitleClick(clickedEl) {
             `
         } 
         else {
-            const imgSrc = (clickedElData.Poster === "N/A") ? "./image/img-not-found.jpg" : clickedElData.Poster
+            const imgSrc = (clickedElData.Poster === "N/A") ? "../image/img-not-found.jpg" : clickedElData.Poster
             clickedEl.dataset.clicked = "false"
             clickedEl.innerHTML = `
             <div>
