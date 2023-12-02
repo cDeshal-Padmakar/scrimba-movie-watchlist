@@ -58,7 +58,7 @@ h4 {
 }
 
 .watchlist-btn:hover,
-.watchlist-btn:focus {
+.watchlist-btn:active {
     text-decoration-color: rgba(255, 255, 255, 1);
 }
 
@@ -144,6 +144,10 @@ h4 {
 .title-watchlist-btn:hover {
     background: #3a2323;
     cursor: pointer;
+}
+
+.title-watchlist-btn:active {
+    background: #7b4242;
 }
 
 /* title clicked */
