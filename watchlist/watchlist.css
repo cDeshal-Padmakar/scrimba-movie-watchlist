@@ -1,0 +1,190 @@
+
+body {
+    background: #121212;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+
+/* typography */
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0.7em 0;
+}
+
+/* layout */
+
+.container {
+    margin: 0 auto;
+    width: 55%;
+}
+
+/* header */
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(35%);
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.heading {
+    position: relative;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.watchlist-btn {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 400ms;
+}
+
+.watchlist-btn:hover,
+.watchlist-btn:focus {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+
+/* main */
+
+.main {
+    width: 93%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 2em 1.5em;
+    margin: 4em auto 4em;
+}
+
+/* title */
+
+.title-container {
+    background-color: #1F1F1F;
+    cursor: pointer;
+    transition: opacity 300ms, box-shadow 400ms;
+}
+
+.show {
+    transition: all 0.3s;
+}
+
+.title-container:hover {
+    box-shadow: 0px 0px 10px #6f6f6f;
+}
+
+.title-container img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.title-summary {
+    padding: 0 1em;
+}
+
+.text-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title-details {
+    display: flex;
+    align-items: center;
+}
+
+.title-details p {
+    margin: 0;
+}
+
+.title-imdb-rating p {
+    width: max-content;
+}
+
+.title-mics-details p {
+    color: #A5A5A5;
+    font-size: 0.8125rem;
+}
+
+.fa-star {
+    color: #FEC654;
+}
+
+.title-watchlist-btn {
+    width: 100%;
+    padding: 1em 0;
+    background: #333333;
+    color: #fff;
+    border: 0;
+    margin: 1em 0 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: background 300ms;
+}
+
+.title-watchlist-btn:hover {
+    background: #3a2323;
+    cursor: pointer;
+}
+
+/* title clicked */
+
+.clicked {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.clicked * {
+    margin-bottom: 0;
+}
+
+.last-child {
+    margin-top: auto;
+}
+
+.last-child button {
+    margin: 1em 0
+}
+
+.plot {
+    color: #efefef;
+}
+
+/* message */
+
+.message {
+    text-align: center;
+}
+
+.message h4 {
+    color: #787878;
+}
+
+.message a {
+    color: #fff;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 400ms;
+}
+
+.message a:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
