@@ -71,7 +71,7 @@ function handleTitleClick(clickedEl) {
                     <p><i class="fa-solid fa-star"></i> ${clickedElData.imdbRating}</p>
                 </div>
                 <div class="title-mics-details">
-                    <p>${clickedElData.Runtime} ● ${clickedElData.Genre} ● ${clickedElData.Type} ● ${clickedElData.Year}</p>
+                    <p>${clickedElData.Runtime} ● ${clickedElData.Type} ● ${clickedElData.Year} ● ${clickedElData.Genre}</p>
                 </div>
                 <div class="plot">
                     <p>${clickedElData.Plot}</p>
