@@ -78,7 +78,13 @@ function handleRemoveBtnClick(index) {
     document.getElementById(index).style.opacity = 0
     localData.splice(index, 1)
     setTimeout(() => {
-        render()
+        if(localData.length === 0) {
+            document.getElementById("main").innerHTML = ""
+            renderEmptyMessage()
+        }
+        else {
+            render()
+        }
     }, 300)
 }
 
