@@ -108,7 +108,7 @@ function handleTitleClick(clickedEl) {
                     <p>${clickedElData.Plot}</p>
                 </div>
                 <div class="last-child">
-                    <button class="title-watchlist-btn text-wrap" data-remove-btn="${clickedEl.id}"><i class="fa-solid fa-xmark"></i></i> Watchlist</button>
+                    <button class="title-watchlist-btn" data-remove-btn="${clickedEl.id}"><i class="fa-solid fa-xmark"></i></i> Watchlist</button>
                 </div>
             </div>
             `
