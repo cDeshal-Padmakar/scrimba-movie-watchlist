@@ -101,8 +101,6 @@ h4 {
     padding-left: 0;
 }
 
-
-
 .search-bar input:focus {
     outline: none;
 }
@@ -124,6 +122,26 @@ h4 {
 .search-bar button:active {
     background: #a2a2a2;
 }
+
+.loading {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: radial-gradient(farthest-side,#ffffff 94%,#0000) top/3.8px 3.8px no-repeat, 
+        conic-gradient(#0000 30%,#ffffff);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3.8px),#000 0);
+    animation: loading-c7wet2 1.2s infinite linear;
+    display: none;
+    position: absolute;
+    top: 13px;
+    right: 120px;
+ }
+ 
+ @keyframes loading-c7wet2 {
+    100% {
+       transform: rotate(1turn);
+    }
+ }
 
 /* main */
 
