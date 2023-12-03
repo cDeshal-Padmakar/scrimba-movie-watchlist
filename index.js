@@ -52,9 +52,12 @@ async function handleSearch() {
 
 }
 
-function handleWatchlistBtnClick(titleId) {
-    if(!(localData.includes(dataBase[titleId]))) {
-        localData.push(dataBase[titleId])
+function handleWatchlistBtnClick(titleIndex) {
+    // testing if title already present in localStorage
+    // if title not present, then push title in localStorage
+    const test = localData.findIndex( title => dataBase[titleIndex].imdbID === title.imdbID )
+    if(test === -1) {
+        localData.push(dataBase[titleIndex])
     }
 }
 
@@ -155,3 +158,4 @@ window.addEventListener("beforeunload", function(e) {
     localStorage.setItem("watchlist", JSON.stringify(localData))
 });
 
+// localStorage.clear()
