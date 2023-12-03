@@ -30,7 +30,8 @@ function handleClick(e) {
 
 async function handleSearch() {
     const titleEl = document.getElementById("title")
-    
+    const loading = document.getElementById("loading")
+    loading.style.display = "inline-block"
     // searching for given title
     const response = await fetch(`http://www.omdbapi.com/?apikey=d5178fef&s=${titleEl.value}`)
     const titles = await response.json()
@@ -48,8 +49,7 @@ async function handleSearch() {
     else {
         renderError()
     }
-    
-
+    loading.style.display = "none"
 }
 
 function handleWatchlistBtnClick(titleIndex) {
